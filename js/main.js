@@ -26,6 +26,14 @@ var cards = [
 ];
 var cardsInPlay = [];
 
+function resetGame() {
+  console.log("Running");
+  var cardList = document.getElementsByTagName('img')
+  for (var i = 0; i < cardList.length; i += 1) {
+    cardList[i].setAttribute('src', 'images/back.png');
+  }
+  createBoard();
+}
 
 var checkForMatch = function() {
 
@@ -33,7 +41,9 @@ var checkForMatch = function() {
     if (cardsInPlay[0] === cardsInPlay[1]) {
       alert("You found a match!");
     } else {
+      resetGame();
       alert("Sorry, try again.");
+
     }
   }
 }
