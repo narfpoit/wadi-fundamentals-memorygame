@@ -16,6 +16,7 @@ nav {
 a {
 	margin: 0 20px;
 	border-bottom: 2px solid transparent;
+	color: #FFFFFF;
 }
 
 a:hover {
@@ -29,7 +30,7 @@ main {
 
 h1 {
 	font-family: "Raleway", serif;
-	color: #0d2c40;
+	color: #FFFFFF;
 	letter-spacing: 1px;
 	font-weight: 400;
 	font-size: 45px;
